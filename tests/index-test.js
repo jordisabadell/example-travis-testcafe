@@ -1,8 +1,10 @@
 import { Selector } from 'testcafe';
 
 fixture `Getting Started`
-    .page `http://devexpress.github.io/testcafe/example`;
+    .page `https://kilometresolidari-static-web.firebaseapp.com/`;
 
-    test('My first test', async t => {
-        // Test code
+    test('Google Custom Search test', async t => {
+        await t
+            .typeText('#q', 'Esquitx')
+            .click('#search');
     });
