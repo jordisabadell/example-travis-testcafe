@@ -1,0 +1,19 @@
+{
+  "name": "example-travis-testcafe",
+  "version": "1.0.0",
+  "description": "An example of run test in Travis CI using TestCafe, following the original example https://devexpress.github.io/testcafe/documentation/continuous-integration",
+  "main": "index.js",
+  "scripts": {
+    "test":  "testcafe chrome,firefox tests/index-test.js --app \"node server.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordisabadell/example-travis-testcafe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jordisabadell/example-travis-testcafe/issues"
+  },
+  "homepage": "https://github.com/jordisabadell/example-travis-testcafe#readme"
+}
