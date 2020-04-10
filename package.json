@@ -4,7 +4,7 @@
   "description": "An example of run test in Travis CI using TestCafe, following the original example https://devexpress.github.io/testcafe/documentation/continuous-integration",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome,firefox tests/index-test.js --app \"node server.js\""
+    "test":  "testcafe chrome,firefox tests/index-test.js"
   },
   "repository": {
     "type": "git",
