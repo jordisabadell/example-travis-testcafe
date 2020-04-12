@@ -4,7 +4,9 @@
   "description": "An example of run test in Travis CI using TestCafe, following the original example https://devexpress.github.io/testcafe/documentation/continuous-integration",
   "main": "index.js",
   "scripts": {
-    "test":  "testcafe chrome,firefox tests/index-test.js"
+    "test": "testcafe chrome,firefox tests/index-test.js",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,14 @@
   },
   "homepage": "https://github.com/jordisabadell/example-travis-testcafe#readme",
   "devDependencies": {
-    "testcafe": "^1.8.4"
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "testcafe": "^1.8.4",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
