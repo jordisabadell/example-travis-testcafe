@@ -18,8 +18,8 @@ before_script:
 script:
   - npm run build 
 after_success:
-  - npm test
   - firebase deploy --token $FIREBASE_TOKEN
+  - npm test
 notifications:
   email: jordisabadell@gmail.com
   on_failure: always
